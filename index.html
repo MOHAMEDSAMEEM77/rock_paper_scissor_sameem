@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="header__title">Rock Paper Scissors</h1>
+    </header>
+
+    <div class="score__board">
+        <div id="user-label" class="score__board__badge score__board__badge-left">user</div>
+        <div id="comp-label" class="score__board__badge score__board__badge-right">comp</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+
+    <div class="result">
+        <p class="result__copy">Go ahead and make your first attempt &#x1F60E;</p>
+    </div>
+
+    <div class="choices">
+        <div class="choices__item" id="r">
+            <img src="images/rock.png" alt="Hand showing rock symbol"/>
+        </div>
+        <div class="choices__item" id="p">
+            <img src="images/paper.png" alt="Hand showing paper symbol"/>
+        </div>
+        <div class="choices__item" id="s">
+            <img src="images/scissors.png" alt="Hand showing scissors symbol"/>
+        </div>
+    </div>
+
+    <div class="user__instructions">
+        <p class="action__message">Make your move.</p>
+        <button class="button-reset" onClick="resetScore()"> Reset </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
